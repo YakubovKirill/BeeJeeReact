@@ -19,8 +19,7 @@ function App() {
       if(response.data.status === 'ok') {
         setTasks(response.data.message.tasks)
       }
-        
-      console.log(response)
+      //console.log(response)
     })
   }
 
