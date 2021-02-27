@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.04em;
+}
+.posts {
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+}
+
+.f-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-wrap {
+    width: max-content;
+    height: max-content;
+}
