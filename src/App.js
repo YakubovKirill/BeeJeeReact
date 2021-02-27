@@ -6,7 +6,7 @@ import React, {useState, useEffect} from "react"
 import Axios from "axios"
 
 function App() {
-  const [adminIsAuth, setAdminAuth] = useState(false)
+  //const [adminIsAuth, setAdminAuth] = useState(false)
   const [tasks, setTasks] = useState([])
   const developer = 'YakubovKirill'
 
@@ -16,21 +16,23 @@ function App() {
         developer: developer
       }
     }).then((response) => {
-      if(response.data.status === 'ok')
+      if(response.data.status === 'ok') {
         setTasks(response.data.message.tasks)
-      console.log('e')
+      }
+        
+      console.log(response)
     })
   }
 
   useEffect(() => {
     loadPosts(developer)
-  }, tasks)
+  }, [])
 
   return (
     <div className="App">
       <Header />
       <div className='formplace f-c'>
-        <AddPostForm />
+        <AddPostForm developer={developer}/>
       </div>
       <PostsList data={tasks}/>
     </div>
