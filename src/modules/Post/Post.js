@@ -1,6 +1,6 @@
 import './Post.css';
 
-function Post() {
+function Post(props) {
     return (
         <div className='post'>
             <div className='post-header f-c'><p>nickname</p></div>

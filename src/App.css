@@ -1,4 +1,10 @@
-textarea {
-    width: 200px;
-    height: 100px;
+.f-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formplace {
+    width: 100%;
+    height: max-content;
 }

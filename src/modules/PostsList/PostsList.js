@@ -1,7 +1,7 @@
 import './PostsList.css';
 import Post from "../Post/Post";
 
-function PostsList() {
+function PostsList(props) {
     return (
         <div className='posts f-c'>
             <div className='list-wrap'>
