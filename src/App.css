@@ -42,3 +42,58 @@
 
 .select-field select:focus { outline: none; }
 .select-field select:hover { cursor: pointer; }
+
+form {
+    width: 300px;
+    height: max-content;
+    background-color: #d4d4d480;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.form-btn {
+    width: max-content;
+    height: max-content;
+    margin: 15px 30px;
+    line-height: 150%;
+    border-radius: 5px;
+    border: none;
+    background-color: #50c750;
+}
+
+.form-btn:hover {
+    cursor: pointer;
+    background-color: #3d993d;
+}
+
+.form-btn:focus { outline: none; }
+
+.form-btn p {
+    margin: 10px 20px;
+    height: max-content;
+    font-size: 17px;
+}
+
+.field {
+    margin: 15px 30px;
+    line-height: 150%;
+    font-size: 17px;
+}
+
+.field p { height: 30px; }
+
+.field input {
+    width: 200px;
+    height: 25px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #676767;
+}
+
+.field input:focus { outline: none; }
+
+footer {
+    height: 100px;
+}
