@@ -6,7 +6,7 @@ function AddPostForm(props) {
     const [userName, setUserName] = useState('')
     const [userMail, setUserMail] = useState('')
     const [text, setText] = useState('')
-    
+
     const addTask = (e) => {
         e.preventDefault();
 
@@ -18,12 +18,12 @@ function AddPostForm(props) {
         Axios.post(`https://uxcandy.com/~shapoval/test-task-backend/v2/create?developer=${props.developer}`, form)
         .then((response) => {
             if(response.data.status === 'ok') alert('Задача успешно добавлена')
-            console.log(response)
         })
     }
 
     return (
         <form onSubmit={addTask}>
+            <div className='field f-c'><h3>Добавить задачу</h3></div>
             <div className='field'>
                 <p>Имя пользователя</p>
                 <input type='text' name='userName' onChange={(event) => setUserName(event.target.value)} required />
